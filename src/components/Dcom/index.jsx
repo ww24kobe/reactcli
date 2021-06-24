@@ -6,11 +6,11 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-
+import "./index.scss" 
 export default function D() {
   return (
-   
-      <div>
+      <div className="Dwrap">
+      <h2>D组件</h2>
         <nav>
           <ul>
             <li>
@@ -35,7 +35,7 @@ export default function D() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
             {/* Route相当于 router-view */}
-        {/* <Route path="/abc/def"  component={abc} /> */}
+        
 
        
       </div>

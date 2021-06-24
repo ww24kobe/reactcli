@@ -15,24 +15,26 @@ function App() {
   return (
 
     <div className="App">
-         {/* / 重定向到 /home */}
-         <Redirect from='/def'  to="/users"/> 
+        <h3>APP根组件</h3>
+        {/* / 重定向到 /home */}
+        <Redirect from='/def'  to="/users"/> 
 
-<Switch>
-    {/* 配置路由规则  exact表示精确匹配，防止匹配其他页面的时候匹配到/，也就是首页 */}
-    <Route exact path="/">
-    <Home />
-  </Route>
-  <Route exact path="/about">
-    <About />
-  </Route>
-  <Route  path="/users">
-    <Users />
-  </Route>
-  <Route path="*">
-    <ErrPage />
-  </Route>
-</Switch>
+        {/* <Route path="/abc/def"  component={abc} /> */}
+        <Switch>
+            {/* 配置路由规则  exact表示精确匹配，防止匹配其他页面的时候匹配到/，也就是首页 */}
+            <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route  path="/users">
+            <Users />
+          </Route>
+          <Route path="*">
+            <ErrPage />
+          </Route>
+        </Switch>
         <A title='tom'/>
         <B title='jack'/>
         <C />
